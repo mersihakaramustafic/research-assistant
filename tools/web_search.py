@@ -2,9 +2,6 @@ import requests
 import os
 
 def search_web(query: str, max_results: int = 5) -> str:
-    """
-    Perform a Google search using SerpAPI and return formatted results.
-    """
     api_key = os.getenv("SERPAPI_API_KEY")
 
     if not api_key:

@@ -98,10 +98,10 @@ streamlit run app.py
 
 ## How It Works
 
-1. **Planning** — The planner sends your goal to GPT-4.1-mini and receives a structured JSON plan of research tasks.
-2. **Execution** — Each task is executed in order. Tasks containing research keywords (e.g., "analyze", "market", "trend") trigger a SerpAPI web search. Results are summarized by the LLM.
-3. **Persistence** — The plan is saved to `data/plan.json` after each completed task, enabling session resumption.
-4. **Report synthesis** — After all tasks complete, the agent compiles all results into a final structured report.
+1. **Planning** - The planner sends your goal to GPT-4.1-mini and receives a structured JSON plan of research tasks.
+2. **Execution** - Each task is executed in order. Tasks containing research keywords (e.g., "analyze", "market", "trend") trigger a SerpAPI web search. Results are summarized by the LLM.
+3. **Persistence** - The plan is saved to `data/plan.json` after each completed task, enabling session resumption.
+4. **Report synthesis** - After all tasks are complete, the agent compiles all results into a final structured report.
 
 ## Dependencies
 

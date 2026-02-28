@@ -7,7 +7,6 @@ class Task(BaseModel):
     status: str = "pending"
     result: Optional[str] = None
 
-
 class ResearchPlan(BaseModel):
     goal: str
     tasks: List[Task]

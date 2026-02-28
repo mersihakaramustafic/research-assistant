@@ -23,6 +23,7 @@ class JsonFormatter(logging.Formatter):
 
 
 def setup_logging():
+    
     os.makedirs(LOG_DIR, exist_ok=True)
 
     logger = logging.getLogger()

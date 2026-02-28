@@ -7,23 +7,19 @@ import logging
 logger = logging.getLogger(__name__)
 
 def execute_plan(plan):
-    """
-    Executes each task sequentially. Uses web search tool when appropriate.
-    """
-
+    
     print("\n=== EXECUTION START ===\n")
 
     for task in plan.tasks:
         if task.status == "completed":
-            continue  # skip already done tasks
+            continue
 
         print(f"[Agent] Executing Task {task.id}: {task.description}")
         logger.info(
-        "Starting task execution",
-        extra={"task_id": task.id, "stage": "execution"}
-    )
+            "Starting task execution",
+            extra={"task_id": task.id, "stage": "execution"}
+        )
 
-        # Tool Selection Logic
         if any(keyword in task.description.lower()
                for keyword in ["research", "identify", "analyze", "market", "trend"]):
             print(f"[Tool] Searching web for: {task.description}")
@@ -31,7 +27,6 @@ def execute_plan(plan):
         else:
             tool_output = "No external tool used."
 
-        # Summarize Findings
         prompt = TASK_SUMMARY_PROMPT_TEMPLATE.format(
             task_description=task.description,
             tool_output=tool_output
@@ -43,14 +38,13 @@ def execute_plan(plan):
         )
 
         logger.info(
-        "LLM call completed",
-        extra={
-            "task_id": task.id,
-            "stage": "execution"
-        }
-    )
+            "LLM call completed",
+            extra={
+                "task_id": task.id,
+                "stage": "execution"
+            }
+        )
 
-        # Extract summary text
         task.result = response.output[0].content[0].text
         task.status = "completed"
 
@@ -61,16 +55,12 @@ def execute_plan(plan):
             extra={"task_id": task.id, "stage": "execution"}
         )
 
-        # Save plan after each task
         save_plan(plan)
 
     return plan
 
 
 def synthesize_report(plan):
-    """
-    Create final structured report from completed tasks.
-    """
 
     compiled_results = "\n\n".join(
         f"{t.description}\n{t.result}" for t in plan.tasks

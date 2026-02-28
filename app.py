@@ -14,7 +14,6 @@ st.set_page_config(page_title="Market Research Agent", layout="wide")
 
 st.title("AI Market Research Agent")
 
-# --- Sidebar ---
 st.sidebar.header("Session Control")
 
 if plan_exists():
@@ -28,7 +27,6 @@ if st.sidebar.button("Reset Plan"):
     st.session_state.plan = None
     st.success("Plan reset.")
 
-# --- Goal Input ---
 goal = st.text_input("Enter your research goal:")
 
 if st.button("Generate Plan"):
@@ -40,7 +38,6 @@ if st.button("Generate Plan"):
     else:
         st.warning("Please enter a goal.")
 
-# --- Display Plan ---
 if "plan" in st.session_state and st.session_state.plan:
 
     plan = st.session_state.plan

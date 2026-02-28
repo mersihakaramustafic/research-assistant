@@ -21,7 +21,6 @@ def main():
         print("=== Market Research AI Agent ===\n")
         goal = input("Enter your research goal: ")
 
-        # Generate structured plan
         plan = generate_plan(goal)
         save_plan(plan)
 
@@ -31,16 +30,13 @@ def main():
 
     input("\nPress Enter to execute tasks...\n")
 
-    # Execute plan
     completed_plan = execute_plan(plan)
 
-    # Display task results
     print("\n=== Task Results ===")
     for t in completed_plan.tasks:
         print(f"\nTask {t.id}: {t.description}")
         print(f"Result: {t.result}\n{'-'*50}")
 
-    # Synthesize final report
     report = synthesize_report(completed_plan)
 
     print("\n=== FINAL MARKET RESEARCH REPORT ===\n")
