@@ -2,12 +2,18 @@ from agent.llm_client import client, MODEL_NAME
 from agent.prompts import PLANNER_PROMPT_TEMPLATE
 from models.schemas import ResearchPlan
 import json
+import logging
 
+logger = logging.getLogger(__name__)
 
 def generate_plan(goal: str) -> ResearchPlan:
     """
     Generate a structured research plan from a high-level goal.
     """
+    logger.info(
+        "Generating research plan",
+        extra={"stage": "planning"}
+    )
 
     prompt = PLANNER_PROMPT_TEMPLATE.format(goal=goal)
 

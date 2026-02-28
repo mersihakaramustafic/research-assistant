@@ -2,7 +2,9 @@ from agent.llm_client import client, MODEL_NAME
 from agent.prompts import TASK_SUMMARY_PROMPT_TEMPLATE, FINAL_REPORT_PROMPT_TEMPLATE
 from storage.persistance import save_plan
 from tools.web_search import search_web
+import logging
 
+logger = logging.getLogger(__name__)
 
 def execute_plan(plan):
     """
@@ -16,6 +18,10 @@ def execute_plan(plan):
             continue  # skip already done tasks
 
         print(f"[Agent] Executing Task {task.id}: {task.description}")
+        logger.info(
+        "Starting task execution",
+        extra={"task_id": task.id, "stage": "execution"}
+    )
 
         # Tool Selection Logic
         if any(keyword in task.description.lower()
@@ -36,11 +42,24 @@ def execute_plan(plan):
             input=prompt,
         )
 
+        logger.info(
+        "LLM call completed",
+        extra={
+            "task_id": task.id,
+            "stage": "execution"
+        }
+    )
+
         # Extract summary text
         task.result = response.output[0].content[0].text
         task.status = "completed"
 
         print(f"[Agent] Completed Task {task.id}\n")
+
+        logger.info(
+            "Task completed",
+            extra={"task_id": task.id, "stage": "execution"}
+        )
 
         # Save plan after each task
         save_plan(plan)
