@@ -1,6 +1,6 @@
 from agent.llm_client import client, MODEL_NAME
 from agent.prompts import TASK_SUMMARY_PROMPT_TEMPLATE, FINAL_REPORT_PROMPT_TEMPLATE
-from storage.persistance import save_plan
+from storage.persistence import save_plan
 from tools.web_search import search_web
 import logging
 

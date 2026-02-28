@@ -14,13 +14,10 @@ class JsonFormatter(logging.Formatter):
             "message": record.getMessage(),
         }
 
-        # Add optional extra fields
         if hasattr(record, "task_id"):
             log_record["task_id"] = record.task_id
         if hasattr(record, "stage"):
             log_record["stage"] = record.stage
-        if hasattr(record, "tokens"):
-            log_record["tokens"] = record.tokens
 
         return json.dumps(log_record)
 
