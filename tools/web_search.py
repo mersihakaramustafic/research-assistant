@@ -1,7 +1,7 @@
 import requests
 import os
 
-def search_web(query: str, num_results: int = 5) -> str:
+def search_web(query: str, max_results: int = 5) -> str:
     """
     Perform a Google search using SerpAPI and return formatted results.
     """
@@ -16,7 +16,7 @@ def search_web(query: str, num_results: int = 5) -> str:
         "engine": "google",
         "q": query,
         "api_key": api_key,
-        "num": num_results
+        "num": max_results
     }
 
     response = requests.get(url=url, params=params)
@@ -31,7 +31,7 @@ def search_web(query: str, num_results: int = 5) -> str:
     
     formatted_results = []
 
-    for result in organic_results[:num_results]:
+    for result in organic_results[:max_results]:
         title = result.get("title", "No title")
         snippet = result.get("snippet", "No snippet available")
         link = result.get("link", "No link")

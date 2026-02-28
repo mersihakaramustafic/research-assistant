@@ -1,5 +1,6 @@
 from agent.llm_client import client, MODEL_NAME
 from agent.prompts import TASK_SUMMARY_PROMPT_TEMPLATE, FINAL_REPORT_PROMPT_TEMPLATE
+from storage.persistance import save_plan
 from tools.web_search import search_web
 
 
@@ -11,6 +12,9 @@ def execute_plan(plan):
     print("\n=== EXECUTION START ===\n")
 
     for task in plan.tasks:
+        if task.status == "completed":
+            continue  # skip already done tasks
+
         print(f"[Agent] Executing Task {task.id}: {task.description}")
 
         # Tool Selection Logic
@@ -37,6 +41,9 @@ def execute_plan(plan):
         task.status = "completed"
 
         print(f"[Agent] Completed Task {task.id}\n")
+
+        # Save plan after each task
+        save_plan(plan)
 
     return plan
 

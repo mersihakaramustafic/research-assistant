@@ -3,14 +3,24 @@ load_dotenv()
 
 from agent.planner import generate_plan
 from agent.executor import execute_plan, synthesize_report
+from storage.persistance import load_plan, save_plan
+import os
 
 
 def main():
-    print("=== Market Research AI Agent ===\n")
-    goal = input("Enter your research goal: ")
+    plan_file = "data/plan.json"
 
-    # Generate structured plan
-    plan = generate_plan(goal)
+    if os.path.exists(plan_file):
+        print("Found existing plan. Loading to resume...")
+        plan = load_plan(plan_file)
+
+    else:
+        print("=== Market Research AI Agent ===\n")
+        goal = input("Enter your research goal: ")
+
+        # Generate structured plan
+        plan = generate_plan(goal)
+        save_plan(plan)
 
     print("\n=== Generated Plan ===")
     for t in plan.tasks:

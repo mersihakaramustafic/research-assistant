@@ -1,11 +1,11 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 class Task(BaseModel):
     id: int
     description: str
     status: str = "pending"
-    result: str | None = None
+    result: Optional[str] = None
 
 
 class ResearchPlan(BaseModel):
