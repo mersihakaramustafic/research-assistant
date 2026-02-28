@@ -2,7 +2,7 @@
 
 An AI-powered market research assistant that autonomously plans, executes, and synthesizes research reports. It uses OpenAI's GPT-4.1-mini to generate structured research plans and SerpAPI for real-time web search.
 
-Available as both a **CLI tool** and a **Streamlit web app**.
+Available as both, a **CLI tool** and a **Streamlit web app**.
 
 ## Features
 
@@ -94,7 +94,7 @@ streamlit run app.py
 - Enter your research goal and click **Generate Plan**
 - Review the task list, then click **Execute Remaining Tasks**
 - Once all tasks are complete, click **Generate Final Report**
-- Use the sidebar to resume an existing plan or reset to start fresh
+- Use the sidebar to resume an existing plan, or reset to start fresh
 
 ## How It Works
 
