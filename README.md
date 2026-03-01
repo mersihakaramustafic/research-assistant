@@ -105,19 +105,19 @@ The system follows a 3-stage loop:
 - Input: High-level research goal
 - Output: Structured task plan (JSON)
 - The plan is persisted to disk immediately
+
 Only the goal is sent to the LLM during planning.
 
 **2. Execution Stage**
 
 - Tasks are executed sequentially
 - For each task:
-- Tool selection
-- Tool results are passed to LLM
-- LLM produces structured task summary
-
-After each task:
-- Status is updated
-- Plan is saved (resume support)
+  - Tool selection
+  - Tool results are passed to LLM
+  - LLM produces structured task summary
+- After each task:
+  - Status is updated
+  - Plan is saved to JSON file
 
 Each task is processed independently to prevent context accumulation.
 
