@@ -18,6 +18,12 @@ class JsonFormatter(logging.Formatter):
             log_record["task_id"] = record.task_id
         if hasattr(record, "stage"):
             log_record["stage"] = record.stage
+        if hasattr(record, "input_tokens"):
+            log_record["input_tokens"] = record.input_tokens
+        if hasattr(record, "output_tokens"):
+            log_record["output_tokens"] = record.output_tokens
+        if hasattr(record, "total_tokens"):
+            log_record["total_tokens"] = record.total_tokens
 
         return json.dumps(log_record)
 

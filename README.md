@@ -146,6 +146,7 @@ This prevents prompt bloat and keeps token usage predictable.
 
 - JSON logs
 - Captures task lifecycle
+- Tracks token usage
 - Enables traceability
 
 **Streamlit UI**

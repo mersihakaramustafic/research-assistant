@@ -20,6 +20,14 @@ def generate_plan(goal: str) -> ResearchPlan:
         input=prompt,
     )
 
+    usage = response.usage
+    logger.info(
+        "Planning token usage",
+        extra={"stage": "planning", "input_tokens": usage.input_tokens,
+               "output_tokens": usage.output_tokens, "total_tokens": usage.total_tokens}
+    )
+    print(f"[Planning] Tokens - Input: {usage.input_tokens}, Output: {usage.output_tokens}, Total: {usage.total_tokens}")
+
     text_output = response.output[0].content[0].text
 
     try:

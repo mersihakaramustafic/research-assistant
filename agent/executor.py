@@ -7,8 +7,11 @@ import logging
 logger = logging.getLogger(__name__)
 
 def execute_plan(plan):
-    
+
     print("\n=== EXECUTION START ===\n")
+
+    total_input_tokens = 0
+    total_output_tokens = 0
 
     for task in plan.tasks:
         if task.status == "completed":
@@ -37,13 +40,20 @@ def execute_plan(plan):
             input=prompt,
         )
 
+        usage = response.usage
+        total_input_tokens += usage.input_tokens
+        total_output_tokens += usage.output_tokens
         logger.info(
             "LLM call completed",
             extra={
                 "task_id": task.id,
-                "stage": "execution"
+                "stage": "execution",
+                "input_tokens": usage.input_tokens,
+                "output_tokens": usage.output_tokens,
+                "total_tokens": usage.total_tokens,
             }
         )
+        print(f"[Execution] Task {task.id} tokens - Input: {usage.input_tokens}, Output: {usage.output_tokens}, Total: {usage.total_tokens}")
 
         task.result = response.output[0].content[0].text
         task.status = "completed"
@@ -56,6 +66,13 @@ def execute_plan(plan):
         )
 
         save_plan(plan)
+
+    print(f"[Execution] Total tokens - Input: {total_input_tokens}, Output: {total_output_tokens}, Total: {total_input_tokens + total_output_tokens}")
+    logger.info(
+        "Execution total token usage",
+        extra={"stage": "execution", "input_tokens": total_input_tokens,
+               "output_tokens": total_output_tokens, "total_tokens": total_input_tokens + total_output_tokens}
+    )
 
     return plan
 
@@ -74,6 +91,14 @@ def synthesize_report(plan):
         model=MODEL_NAME,
         input=prompt,
     )
+
+    usage = response.usage
+    logger.info(
+        "Final generation token usage",
+        extra={"stage": "final_generation", "input_tokens": usage.input_tokens,
+               "output_tokens": usage.output_tokens, "total_tokens": usage.total_tokens}
+    )
+    print(f"[Final Generation] Tokens — Input: {usage.input_tokens}, Output: {usage.output_tokens}, Total: {usage.total_tokens}")
 
     report_text = response.output[0].content[0].text
     return report_text
