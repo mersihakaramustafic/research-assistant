@@ -117,6 +117,7 @@ streamlit run app.py
 **1️. Market Overview**
 
 Goal: Analyze the European EV market in 2025
+
 Success Criteria:
 - Structured task breakdown
 - Competitor analysis included
@@ -126,6 +127,7 @@ Success Criteria:
 **2. Competitor Benchmarking**
 
 Goal: Compare leading AI legal tech startups
+
 Success Criteria:
 - Key players identified
 - Differentiation explained
@@ -134,6 +136,7 @@ Success Criteria:
 **3. Resume Capability**
 
 Interrupt execution mid-run
+
 Success Criteria:
 - Restart resumes correctly
 - No completed task is re-executed
