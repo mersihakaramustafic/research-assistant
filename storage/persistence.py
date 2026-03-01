@@ -16,9 +16,15 @@ def save_plan(plan: ResearchPlan):
 
 
 def load_plan() -> ResearchPlan:
-    with open(PLAN_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return ResearchPlan(**data)
+    try:
+        with open(PLAN_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        raise RuntimeError(f"Plan file is corrupted and cannot be read: {e}") from e
+    try:
+        return ResearchPlan(**data)
+    except Exception as e:
+        raise RuntimeError(f"Plan file has an invalid structure: {e}") from e
 
 
 def plan_exists() -> bool:

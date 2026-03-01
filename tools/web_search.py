@@ -18,10 +18,16 @@ def search_web(query: str, max_results: int = 5) -> str:
         "num": max_results
     }
 
-    response = requests.get(url=url, params=params)
-    response.raise_for_status()
+    try:
+        response = requests.get(url=url, params=params)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        raise RuntimeError(f"Web search request failed: {e}") from e
 
-    data = response.json()
+    try:
+        data = response.json()
+    except ValueError as e:
+        raise RuntimeError(f"Failed to parse search API response: {e}") from e
 
     organic_results = data.get("organic_results", [])
 

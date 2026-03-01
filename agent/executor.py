@@ -26,7 +26,15 @@ def execute_plan(plan):
         if any(keyword in task.description.lower()
                for keyword in ["research", "identify", "analyze", "market", "trend"]):
             print(f"[Tool] Searching web for: {task.description}")
-            tool_output = search_web(task.description)
+            try:
+                tool_output = search_web(task.description)
+            except Exception as e:
+                logger.warning(
+                    "Web search failed, continuing without results",
+                    extra={"task_id": task.id, "stage": "execution", "error": str(e)}
+                )
+                print(f"[Tool] Web search failed: {e}. Proceeding without results.")
+                tool_output = "Web search failed, no results available."
         else:
             tool_output = "No external tool used."
 
