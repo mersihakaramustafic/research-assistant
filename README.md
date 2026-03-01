@@ -96,12 +96,64 @@ streamlit run app.py
 - Once all tasks are complete, click **Generate Final Report**
 - Use the sidebar to resume an existing plan, or reset to start fresh
 
-## How It Works
+## Agent Loop Architecture
 
-1. **Planning** - The planner sends your goal to GPT-4.1-mini and receives a structured JSON plan of research tasks.
-2. **Execution** - Each task is executed in order. Tasks containing research keywords (e.g., "analyze", "market", "trend") trigger a SerpAPI web search. Results are summarized by the LLM.
-3. **Persistence** - The plan is saved to `data/plan.json` after each completed task, enabling session resumption.
-4. **Report synthesis** - After all tasks are complete, the agent compiles all results into a final structured report.
+The system follows a 3-stage loop:
+
+**1. Planning Stage**
+
+- Input: High-level research goal
+- Output: Structured task plan (JSON)
+- The plan is persisted to disk immediately
+Only the goal is sent to the LLM during planning.
+
+**2. Execution Stage**
+
+- Tasks are executed sequentially
+- For each task:
+- Tool selection
+- Tool results are passed to LLM
+- LLM produces structured task summary
+
+After each task:
+- Status is updated
+- Plan is saved (resume support)
+
+Each task is processed independently to prevent context accumulation.
+
+**3. Synthesis Stage**
+
+- Completed task summaries are aggregated
+- Final report is generated
+- Only summaries (not raw web content) are included
+
+This prevents prompt bloat and keeps token usage predictable.
+
+## Tools Integrated
+
+**SerpAPI Web Search**
+
+- Used for market research and competitor analysis
+- Returns limited structured results
+
+**Persistence Layer (JSON-based)**
+
+- Saves plan state after each task
+- Enables resume capability
+- Prevents data loss on crash
+
+**Structured Logging**
+
+- JSON logs
+- Captures task lifecycle
+- Enables traceability
+
+**Streamlit UI**
+
+- Interactive goal input
+- Plan visualization
+- Task status tracking
+- Resume and reset functionality
 
 ## Dependencies
 
@@ -140,3 +192,11 @@ Interrupt execution mid-run
 Success Criteria:
 - Restart resumes correctly
 - No completed task is re-executed
+
+
+## Future Improvements
+
+- RAG over internal document sets
+- Deployment as REST API service
+- Parallel task execution
+- Tool confidence scoring
