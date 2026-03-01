@@ -1,7 +1,9 @@
 import requests
 import os
+import re
 
 def search_web(query: str, max_results: int = 5) -> str:
+
     api_key = os.getenv("SERPAPI_API_KEY")
 
     if not api_key:
@@ -33,10 +35,17 @@ def search_web(query: str, max_results: int = 5) -> str:
         snippet = result.get("snippet", "No snippet available")
         link = result.get("link", "No link")
 
-        formatted_results.append(
-            f"Title: {title}\n"
-            f"Snippet: {snippet}\n"
-            f"Source: {link}\n"
+        domain = link.split("/")[2] if "://" in link else link
+
+        numbers = re.findall(
+            r'\d+\.?\d*%?|\$?\d+\.?\d*\s?(?:billion|million|B|M)?',
+            snippet
         )
 
-    return "\n---\n".join(formatted_results)
+        formatted_results.append({
+            "title": title,
+            "key_stats": numbers,
+            "source": domain
+        })
+
+    return formatted_results

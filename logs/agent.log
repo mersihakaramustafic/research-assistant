@@ -381,3 +381,234 @@
 {"timestamp": "2026-02-28T23:29:27.030040", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
 {"timestamp": "2026-02-28T23:29:27.030122", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
 {"timestamp": "2026-02-28T23:29:27.030206", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:19.761187", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-02-28T23:39:19.761556", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-02-28T23:39:19.761673", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-02-28T23:39:25.335071", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:25.335253", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:25.335482", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:30.005392", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:30.005473", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:30.005640", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:30.005699", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.559444", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:38.559628", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:38.559704", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:38.559745", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:38.562392", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.562521", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.562642", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.562706", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.563439", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.563657", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.563759", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.563822", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.568136", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.568427", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.568586", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:38.568671", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.003915", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:50.004166", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:50.004266", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:50.004341", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:50.006341", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.006466", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.006532", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.006587", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.007443", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.007580", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.007651", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.007706", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.011753", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.011886", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.011960", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:50.012026", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.775755", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:55.775898", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:55.775964", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:55.776018", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:39:55.777546", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.777648", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.777699", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.777746", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.778599", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.778707", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.778766", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.778812", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.781928", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.781998", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.782030", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:39:55.782058", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.901909", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:05.902078", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:05.902149", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:05.902191", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:05.903805", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.903892", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.904056", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.904095", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.904808", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.904928", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.904995", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.905050", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.909009", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.909303", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.909412", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:05.909728", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.300220", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:14.300341", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:14.300397", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:14.300444", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:14.301856", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.301938", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.301983", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.302054", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.302782", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.302875", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.302926", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:14.303098", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:40:29.740057", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:29.740240", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:29.740332", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:29.740402", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:40:29.740467", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:54:53.548270", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-02-28T23:54:56.966348", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:55:11.347883", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:19.905504", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:55:19.907112", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:19.907852", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:19.909290", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:32.134174", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:55:32.135676", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:32.136588", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:32.138792", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:39.314819", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:55:39.316636", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:39.317537", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:39.320123", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:50.384277", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:55:50.385357", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:50.386016", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:50.387936", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:57.560819", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-02-28T23:55:57.562366", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:55:57.563181", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-02-28T23:56:22.610235", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:02:56.594811", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-03-01T00:02:59.311483", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:03:02.912732", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:05:52.694547", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-03-01T00:05:56.458612", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:05:57.757491", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:08.099567", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:06:08.100993", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:08.101663", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:08.103106", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:17.546495", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:06:17.548283", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:17.549209", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:17.551603", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:24.428795", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:06:24.429833", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:24.430547", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:24.432348", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:36.563207", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:06:36.564925", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:36.565870", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:36.568476", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:43.645260", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:06:43.647315", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:43.648299", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:06:57.258117", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:32.330320", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-03-01T00:07:32.330564", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-03-01T00:07:32.330720", "level": "INFO", "message": "Generating research plan", "stage": "planning"}
+{"timestamp": "2026-03-01T00:07:37.640278", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:37.640450", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:37.640531", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:40.074304", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:40.074389", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:40.074430", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:40.074463", "level": "INFO", "message": "Starting task execution", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.606033", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:46.606160", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:46.606204", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:46.606234", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:46.607854", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.607952", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.607989", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.608016", "level": "INFO", "message": "LLM call completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.608712", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.608814", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.608866", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.608902", "level": "INFO", "message": "Task completed", "task_id": 1, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.611164", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.611271", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.611350", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:46.611410", "level": "INFO", "message": "Starting task execution", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.424499", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:53.424624", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:53.424664", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:53.424692", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:07:53.425776", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.425829", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.425850", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.425867", "level": "INFO", "message": "LLM call completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.426417", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.426635", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.426680", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.426699", "level": "INFO", "message": "Task completed", "task_id": 2, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.428701", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.428791", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.428827", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:07:53.428849", "level": "INFO", "message": "Starting task execution", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.546905", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:01.546988", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:01.547076", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:01.547097", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:01.547875", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.547911", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.547925", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.547942", "level": "INFO", "message": "LLM call completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.548330", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.548372", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.548387", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.548399", "level": "INFO", "message": "Task completed", "task_id": 3, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.549754", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.549834", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.549988", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:01.550068", "level": "INFO", "message": "Starting task execution", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.725093", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:09.725206", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:09.725239", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:09.725263", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:09.726305", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.726368", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.726394", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.726414", "level": "INFO", "message": "LLM call completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.727024", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.727097", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.727123", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.727144", "level": "INFO", "message": "Task completed", "task_id": 4, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.729376", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.729453", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.729482", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:09.729504", "level": "INFO", "message": "Starting task execution", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.509291", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:17.509472", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:17.509530", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:17.509573", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:17.511084", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.511172", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.511210", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.511241", "level": "INFO", "message": "LLM call completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.512086", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.512188", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.512228", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:17.512256", "level": "INFO", "message": "Task completed", "task_id": 5, "stage": "execution"}
+{"timestamp": "2026-03-01T00:08:32.018717", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:32.018917", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:32.019010", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:32.019271", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
+{"timestamp": "2026-03-01T00:08:32.019468", "level": "INFO", "message": "HTTP Request: POST https://api.openai.com/v1/responses \"HTTP/1.1 200 OK\""}
