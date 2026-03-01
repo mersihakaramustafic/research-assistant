@@ -1,8 +1,7 @@
 from agent.planner import generate_plan
 from agent.executor import execute_plan, synthesize_report
-from storage.persistence import load_plan, save_plan
+from storage.persistence import load_plan, save_plan, plan_exists
 from infrastructure.logging_config import setup_logging
-import os
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -11,11 +10,9 @@ load_dotenv()
 def main():
     setup_logging()
 
-    plan_file = "data/plan.json"
-
-    if os.path.exists(plan_file):
+    if plan_exists():
         print("Found existing plan. Loading to resume...")
-        plan = load_plan(plan_file)
+        plan = load_plan()
 
     else:
         print("=== Market Research AI Agent ===\n")
